@@ -1,0 +1,50 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the game container */
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2.5em;
+    color: #007bff;
+}
+
+/* Style the score container */
+#score-container {
+    margin-top: 20px;
+}
+
+/* Style the start button */
+#start-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #218838;
+}
+
+/* Style the game board */
+#game-board {
+    margin-top: 30px;
+}
+
+/* Add more styles as needed */
