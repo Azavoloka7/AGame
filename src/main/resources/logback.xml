@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger{100}.%M - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.zavoloka" additivity="false" level="debug">
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>
+
+        <!-- Це конфігураційний файл для Logback, який використовується для налаштування системи ведення журналу
+        (логування) в Java-додатку. Ось його ключові елементи:
+
+Appender (Вивід):
+
+STDOUT - Використовується ConsoleAppender для виводу логів на консоль.
+Використовує патерн %d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger{100}.%M - %msg%n для
+визначення формату запису логів.
+Logger (Логери):
+
+Є конфігурація для логера з ім'ям com.zavoloka. Для цього логера визначено рівень логування debug та вказано
+використання аппендера STDOUT. Це означає, що всі логи для класів пакету com.zavoloka будуть виводитись на консоль з
+рівнем debug.
+
+Root Logger (Кореневий логер):
+
+Кореневий логер визначено на рівні info та також використовує аппендер STDOUT. Всі логи, які не належать до конкретних
+логерів (які більше специфічні), також будуть виведені на консоль.
+Цей файл дозволяє налаштувати ведення журналу для додатка, де визначено, як і куди будуть виводитись різні рівні логів. -->

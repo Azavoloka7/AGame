@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.2</version>
+		<relativePath />
+	</parent>
+
+	<groupId>com.zavoloka</groupId>
+	<artifactId>AGame</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>AGame-manager</name>
+	<description>Spring Boot AGame Quest</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version>
+        </dependency>
+		<!-- for tests -->
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+    </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+<!--Це файл pom.xml, який є конфігураційним файлом проекту Maven для вашого Spring Boot додатку "AGame". Давайте
+розглянемо основні елементи цього файлу:
+
+<project> елемент:
+
+xmlns: Вказує простір імен Maven XML.
+xmlns:xsi та xsi:schemaLocation: Визначають XML-схему, яка використовується для валідації файлу POM.
+<modelVersion>:
+
+Визначає версію моделі POM. В даному випадку, це 4.0.0, що є поточною версією.
+<parent> елемент:
+
+Вказує на батьківський POM. У вашому випадку, це використовує spring-boot-starter-parent як батьківський POM з версією 3.2.2.
+Група та артефакт:
+
+<groupId> та <artifactId> визначають координати проекту (ідентифікатор групи та артефакту).
+Версія:
+
+<version> вказує версію вашого проекту.
+Назва та опис:
+
+<name> та <description> надають назву та опис вашому проекту.
+Залежності:
+
+<dependencies> містить список залежностей вашого проекту. У вашому випадку, ви використовуєте Spring Boot Starter для
+веб-програмування, PostgreSQL для роботи з базою даних PostgreSQL, а також залежності для тестування.
+Білд-конфігурація:
+
+<build> містить конфігурацію для збірки проекту. У вашому випадку, ви використовуєте плагін Spring Boot Maven Plugin для
+збірки Spring Boot додатку.
+Цей pom.xml файл дозволяє Maven правильно налаштувати ваш проект, встановити всі необхідні залежності та використовувати
+плагіни для ефективної збірки та запуску вашого Spring Boot додатку. -->
