@@ -83,3 +83,29 @@ public class ConverterServiceImpl implements ConverterService {
 		return new QuestionPossibleAnswerDto(questionPossibleAnswer.getId(), questionPossibleAnswer.getPossibleAnswer());
 	}
 }
+/*Цей клас, ConverterServiceImpl, реалізує інтерфейс ConverterService і містить реалізації методів конвертації між
+об'єктами моделі та об'єктами DTO. Давайте розглянемо його функції більш детально:
+
+Метод toModel:
+
+Виконує конвертацію об'єкта GameDto у відповідний об'єкт моделі Game.
+Перевіряє наявність обов'язкових полів та валідність даних.
+Створює об'єкт Game з переданими даними.
+Метод toModel (приватний):
+
+Виконує конвертацію об'єкта QuestionDto у відповідний об'єкт моделі Question.
+Викликає toModel для кожної можливої відповіді, побудованої з об'єкта QuestionPossibleAnswerDto.
+Створює об'єкт Question з переданими даними.
+Метод toModel (приватний):
+
+Виконує конвертацію об'єкта QuestionPossibleAnswerDto у відповідний об'єкт моделі QuestionPossibleAnswer.
+Метод toDto:
+
+Виконує конвертацію об'єкта Question у відповідний об'єкт QuestionDto.
+Викликає toModel для кожної можливої відповіді, побудованої з об'єкта QuestionPossibleAnswer.
+Метод toModel (приватний):
+
+Виконує конвертацію об'єкта QuestionPossibleAnswer у відповідний об'єкт QuestionPossibleAnswerDto.
+Цей сервіс грає важливу роль у проекті, забезпечуючи конвертацію між об'єктами різних представлень і допомагаючи в
+забезпеченні чистоти та відокремленості коду за допомогою DTO та моделей. Також, за допомогою перевірок наявності
+обов'язкових полів та валідації даних, він забезпечує додатковий рівень надійності в системі.*/
