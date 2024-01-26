@@ -60,7 +60,7 @@ public class Question {
         totalUserAnswered.incrementAndGet();
 
         try {
-            QuestionPossibleAnswer questionPossibleAnswer = questionPossibleAnswerList.get(questionPossibleAnswerId);
+            QuestionPossibleAnswer questionPossibleAnswer = questionPossibleAnswerList.get(questionPossibleAnswerId - 1);
             questionPossibleAnswer.incTotalUserAnswered();
         } catch (IndexOutOfBoundsException e) {
             throw new GameException("Illegal questionPossibleAnswerId: " + questionPossibleAnswerId, e);
