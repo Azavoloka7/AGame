@@ -10,7 +10,7 @@ public class AGameApplication {
 		SpringApplication.run(AGameApplication.class, args);
 	}
 }
-/*Цей клас, AGameApplication, є основним класом Spring Boot додатка і виконує ключову роль у запуску вашого додатка. Ось його роль та функції в проекті:
+/*Цей клас, AGameApplication, є основним класом Spring Boot додатка і виконує ключову роль у запуску додатка. Ось його роль та функції в проекті:
 
 Анотація @SpringBootApplication:
 
