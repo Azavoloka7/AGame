@@ -7,7 +7,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.2.2</version>
-		<relativePath />
+		<relativePath/>
 	</parent>
 
 	<groupId>com.zavoloka</groupId>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.6.0</version>
+            <version>42.7.1</version>
         </dependency>
 		<!-- for tests -->
         <dependency>
